@@ -31,7 +31,8 @@ func main() {
 	sayHello()
 	printName("John Doe")
 	fmt.Println(getName("John Doe"))
-	firstName, lastName /* the return variable here can be assigned to ( _ ) if */ := getFullName("John", "Doe")
+	/* the return variable here can be assigned to ( _ ) if the value is not used */
+	firstName, lastName := getFullName("John", "Doe")
 	fmt.Println(firstName, lastName)
 	fullName := getFullNameArray("John", "Doe")
 	fmt.Println(fullName[0])
