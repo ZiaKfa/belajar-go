@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//Variable in Go must be used, otherwise it will cause error
 func main() {
 	//complete variable declaration
 	var hello string = "Hello World"
