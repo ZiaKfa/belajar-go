@@ -7,6 +7,11 @@ type Person struct {
 	Age           int
 }
 
+func (p Person) sayHello(q Person) {
+	fmt.Println("Hello", q.Name, " my name is", p.Name)
+	fmt.Println("I am", p.Age, "years old and I live in", p.Address)
+}
+
 func main() {
 	newPerson := Person{
 		Name:    "John Doe",
@@ -25,5 +30,7 @@ func main() {
 	fmt.Println(otherPerson.Name)
 	fmt.Println(otherPerson.Address)
 	fmt.Println(otherPerson.Age)
+
+	otherPerson.sayHello(somePerson)
 
 }
